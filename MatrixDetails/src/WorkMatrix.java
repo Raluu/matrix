@@ -14,7 +14,7 @@ public class WorkMatrix {
 	public void setMatrix(int[][] matrix) {
 		this.matrix = matrix;
 	}
-	
+
 	int[] addElement(int[] org, int added) {
 		int[] result = Arrays.copyOf(org, org.length + 1);
 		result[org.length] = added;
@@ -55,5 +55,21 @@ public class WorkMatrix {
 		return temp;
 	}
 
-
+	public int palindrom(int[][] matrix) {
+		int nr = 0;
+		int x = 0;
+		int ni;
+		for (int i = 0; i < matrix.length; i++)
+			for (int j = 0; j < matrix.length; j++) {
+				ni = 0;
+				x = matrix[i][j];
+				while (x != 0) {
+					ni = ni * 10 + x % 10;
+					x = x / 10;
+				}
+				if (matrix[i][j] == ni)
+					nr++;
+			}
+		return nr;
+	}
 }

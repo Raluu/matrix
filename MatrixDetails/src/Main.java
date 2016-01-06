@@ -28,7 +28,8 @@ public class Main {
 		for (int i = 0; i < workSquare.Odd(matrix).length; i++) {
 			writer.print(workSquare.Odd(matrix)[i] + " ");
 		}
-		
+		writer.println();
+		writer.println("Nr. de numere palindrom= " + workSquare.palindrom(matrix));
 		
 		writer.close();
 	}

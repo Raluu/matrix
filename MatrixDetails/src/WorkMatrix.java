@@ -54,7 +54,7 @@ public class WorkMatrix {
 		}
 		return temp;
 	}
-
+hkhgh
 	public int palindrom(int[][] matrix) {
 		int nr = 0;
 		int x = 0;

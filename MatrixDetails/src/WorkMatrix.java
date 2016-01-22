@@ -71,5 +71,21 @@ public class WorkMatrix {
 					nr++;
 			}
 		return nr;
-	}
+	
+	
+	public int palindroame(int [][]matrix)
+	int nr = 0;
+	int x = 0;
+	int ni;
+	for (int i = 0; i < matrix.length; i++)
+		for (int j = 0; j < matrix.length; j++) {
+			ni = 0;
+			x = matrix[i][j];
+			while (x != 0) {
+				ni = ni * 10 + x % 10;
+				x = x / 10;
+			}
+			if(matrix[i][j]==ni)
+			    
+		}
 }
